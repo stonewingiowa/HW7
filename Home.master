@@ -1,0 +1,34 @@
+﻿<%@ Master Language="VB" CodeFile="Home.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server">View All</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server">Search</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink4" runat="server">About</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink5" runat="server">Contact Us</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink6" runat="server">Admin</asp:HyperLink>
+&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink7" runat="server">Log In</asp:HyperLink>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

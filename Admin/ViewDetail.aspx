@@ -48,7 +48,6 @@
 &nbsp;&nbsp;
         <asp:HyperLink ID="HyperLink7" runat="server">Log In</asp:HyperLink>
         <br />
-        <br />
         <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Height="87px" Width="231px">
             <Fields>
                 <asp:BoundField DataField="Model" HeaderText="Model" SortExpression="Model" />
@@ -56,6 +55,7 @@
                 <asp:BoundField DataField="Horsepower" HeaderText="Horsepower" SortExpression="Horsepower" />
                 <asp:BoundField DataField="MPG" HeaderText="MPG" SortExpression="MPG" />
                 <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
     
