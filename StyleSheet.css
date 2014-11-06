@@ -1,3 +1,16 @@
 ﻿
 body {
-}
+    background-color: white;
+    text-align:center;
+    font-size:20px;
+       }
+
+h1 {font-style:italic; font-weight:bold; font-size:36px;}
+h2 {font-style:italic; font-weight:bold; font-size:22px;}
+
+.footer{font-size:10pt; text-align:center; line-height:12pt; padding-top:30pt;}
+
+.gridview{background-color:coral; color:white; margin-left:auto; margin-right:auto;border:2px solid white;}
+.gridview th{background-color:#FFFF99; color:#696969}
+
+.detailview{background-color:coral; color:white; margin-left:auto; margin-right:auto;border:2px solid white;}
