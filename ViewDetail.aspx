@@ -35,9 +35,9 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.master">Home</asp:HyperLink>
 &nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink2" runat="server">View All</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ViewAll.aspx">View All</asp:HyperLink>
 &nbsp;&nbsp;
         <asp:HyperLink ID="HyperLink3" runat="server">Search</asp:HyperLink>
 &nbsp;&nbsp;
