@@ -1,49 +1,30 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="login.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="login.aspx.vb" Inherits="login_Default" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="../css/StyleSheet.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div id ="container">
-        <div id ="header">
-            <h1>BMW</h1>
-            <h3> EXPERIENCE THE BMW HAPPIER HOLIDAY EVENT.</h3>
-        </div>
-        <div id ="right_header">
-            <img src="css/bmw-logo.jpg" height="100px" />
-        </div>
-        <br/>
-            </div>
-        <div id ="menu">
-    
-               <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
-&nbsp;|&nbsp;
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ViewAll.aspx">View All</asp:HyperLink>
-&nbsp;|&nbsp;
-        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink>
-&nbsp;|&nbsp;
-        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/About Us.aspx">About</asp:HyperLink>
-&nbsp;|&nbsp;
-        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink>
-&nbsp;|&nbsp;
-        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/login/login.aspx">Admin</asp:HyperLink>
-&nbsp;|&nbsp;
-        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/login/login.aspx">Log In</asp:HyperLink>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-        </div>
-    <div >
     
-        &nbsp;&nbsp;&nbsp;&nbsp;
+    <br />
+    <br />
+        <div style="padding-left:35%; padding-right:35%; width: 271px;">
+
+       
+           &nbsp;&nbsp;&nbsp;&nbsp;
     
-        <asp:Login ID="Login1" runat="server" CssClass="login" Height="150px" Width="401px">
+        <asp:Login ID="Login1" runat="server" CssClass="login" Height="150px" Width="281px" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333">
+            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+            <LoginButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
+            <TextBoxStyle Font-Size="0.8em" />
+            <TitleTextStyle BackColor="#507CD1" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
         </asp:Login>
-    
-    </div >
-    </form>
-</body>
-</html>
+
+        </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+</asp:Content>
+

@@ -9,19 +9,39 @@
     </asp:ContentPlaceHolder>
         </title>
     <link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
+    <style type="text/css">
+        .auto-style1 {
+            font-size: x-large;
+        }
+        .auto-style2 {
+            font-size: larger;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     
     <div id ="container">
         <div id ="header">
-            <h1>BMW</h1>
-            <h3> EXPERIENCE THE BMW HAPPIER HOLIDAY EVENT.</h3>
+            <h1><span class="auto-style2">BMW&nbsp;&nbsp;</span></h1>
+            <h1><span class="auto-style1">EXPERIENCE THE BMW HAPPIER HOLIDAY EVENT.&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
         </div>
         <div id ="right_header">
-            <img src="css/bmw-logo.jpg" height="100px" />
+            
+
+
+            <asp:Image ID="logo" runat="server" Height="129px" ImageUrl="~/bmw-logo.jpg" style="margin-left: 0px; margin-top: 9px;" Width="135px" />
+            
+
+
         </div>
         <br/>
+        <div id="date">
+
+            Today's date is:<asp:Label ID="lbl_time" runat="server" ><%= String.Format("{0:d}",DateTime.Now )%></asp:Label> 
+         </div>
+        <br/>
+
 
         <div id ="menu">
     
@@ -37,9 +57,15 @@
 &nbsp;|&nbsp;
         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/login/login.aspx">Admin</asp:HyperLink>
 &nbsp;|&nbsp;
-        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/login/login.aspx">Log In</asp:HyperLink>
-
+        
         </div>
+        <br/>
+
+
+        
+
+        <br/>
+
 
       <div id ="main">
 

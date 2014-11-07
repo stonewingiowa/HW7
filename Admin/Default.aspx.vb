@@ -1,5 +1,5 @@
 ﻿
-Partial Class Admin_ViewAll2
+Partial Class Admin_Default
     Inherits System.Web.UI.Page
 
 End Class
