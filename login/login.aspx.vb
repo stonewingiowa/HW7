@@ -6,7 +6,7 @@ Partial Class _Default
 
     Protected Sub Login1_LoggedIn(sender As Object, e As EventArgs) Handles Login1.LoggedIn
 
-        If Roles.IsUserInRole(Login1.UserName, "r_colbert_Admin") = True Then
+        If Roles.IsUserInRole(Login1.UserName, "r_yshi7_Admin") = True Then
             Response.Redirect("~/admin/ViewAllStates.aspx")
 
         Else : Response.Redirect("~/ViewAllStates.aspx")
@@ -14,4 +14,6 @@ Partial Class _Default
         End If
 
     End Sub
+
+    
 End Class

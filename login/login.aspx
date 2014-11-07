@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ViewAll.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="login.aspx.vb" Inherits="_Default" %>
 
 <!DOCTYPE html>
 
@@ -9,10 +9,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_ToolRental %>" SelectCommand="SELECT * FROM [yi_BMW] ORDER BY [ID]"></asp:SqlDataSource>
-        <br />
         <div id ="container">
         <div id ="header">
             <h1>BMW</h1>
@@ -40,17 +36,14 @@
         <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/login/login.aspx">Log In</asp:HyperLink>
 
         </div>
-        <br />
-        <br />
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="517px" CssClass="gridview">
-            <Columns>
-                <asp:BoundField DataField="Model" HeaderText="Model" SortExpression="Model" />
-                <asp:BoundField DataField="Style" HeaderText="Style" SortExpression="Style" />
-                <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="ViewDetail.aspx?ID={0}" HeaderText="Select" Text="Select" />
-            </Columns>
-        </asp:GridView>
+    <div >
     
-    </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    
+        <asp:Login ID="Login1" runat="server" CssClass="login" Height="150px" Width="401px">
+        </asp:Login>
+    
+    </div >
     </form>
 </body>
 </html>
